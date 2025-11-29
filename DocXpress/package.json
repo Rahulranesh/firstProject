@@ -1,0 +1,33 @@
+{
+  "name": "docxpress-backend",
+  "version": "1.0.0",
+  "description": "DocXpress - All-in-one scanning, document conversion, compression, and note-taking utility",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["document", "conversion", "compression", "scanning"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.6",
+    "fluent-ffmpeg": "^2.1.2",
+    "pdfkit": "^0.13.0",
+    "pdf-parse": "^1.1.1",
+    "pptxgenjs": "^3.12.0",
+    "docx": "^8.5.0",
+    "tesseract.js": "^4.1.1",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "express-validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

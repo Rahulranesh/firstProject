@@ -1,0 +1,86 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Backend: Install Dependencies",
+      "type": "shell",
+      "command": "npm",
+      "args": ["install"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Backend: Run Server",
+      "type": "shell",
+      "command": "npm",
+      "args": ["start"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "isBackground": true,
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "Backend: Run Server (Dev Mode)",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "dev"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "isBackground": true,
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Flutter: Install Dependencies",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["pub", "get"],
+      "options": {
+        "cwd": "${workspaceFolder}/flutter_app"
+      },
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Flutter: Run App",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run"],
+      "options": {
+        "cwd": "${workspaceFolder}/flutter_app"
+      },
+      "problemMatcher": [],
+      "isBackground": false,
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Flutter: Clean",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["clean"],
+      "options": {
+        "cwd": "${workspaceFolder}/flutter_app"
+      },
+      "problemMatcher": [],
+      "group": "build"
+    }
+  ]
+}
